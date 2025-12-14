@@ -16,13 +16,14 @@ text: #6D1E2C
     --header-background-color: #F4C2C2;
     --header-text: #6D1E2C;
     --button-background-color: #C44569;
-    --text-color: #6D1E2C;
+    --button-text-color:#F4C2C2;
+    --quote-color: #6D1E2C;
 }
 
 body{
     margin: 2%;
     background-color: var(--background-color);
-    color:var(--text-color) ;
+    color:var(--quote-color) ;
 }
 
 div.container{
@@ -68,7 +69,7 @@ select{
 
 select option:checked{
     background-color: var(--button-background-color)  ;
-    color: var(--text-color);
+    color: var(--quote-color);
 }
 
 div.button_container {
@@ -81,7 +82,7 @@ div.button_container {
 button.bottom_nav_buttons{
     flex: 1;
     padding: 20px 45px;
-    color: var(--background-color) ;
+    color: var(--button-text-color) ;
     background-color: var(--button-background-color);
     border-radius: 49px;
     border: 0px;
