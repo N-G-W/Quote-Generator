@@ -21,18 +21,20 @@ text: #6D1E2C
 }
 
 body{
-    margin: 2%;
     background-color: var(--background-color);
     color:var(--quote-color) ;
 }
 
 div.container{
     display:flex;
+    min-height: 95vh;
     flex-direction: column;
+    justify-content: center;
 }
 
 header{
-    flex: 1;
+    margin: 1%;
+    /* flex: 1; */
     font-size: 64px;
     text-align: center;
     padding: 40px;
@@ -45,7 +47,7 @@ header{
 }
 
 div.dropdown{
-    flex:1;
+    /* flex:1; */
     padding-top: 20px;
     margin-right: 15px;
     align-self:flex-end;
@@ -72,10 +74,16 @@ select option:checked{
     color: var(--quote-color);
 }
 
+div.button_container_container{
+    /* flex: 1; */
+    display: flex;
+    margin: auto 50% ;
+    justify-content: center;
+}
 div.button_container {
     flex: 1;
+    height: 5%;
     display: flex;
-    margin: auto;
     gap: 5%;
 }
 
@@ -91,16 +99,19 @@ button.bottom_nav_buttons{
 
 div.quote_content{
     display: flex;
+    height: 80%;
+    width: 50%;
+    align-self: center;
     flex-direction: column;
     flex: 1;
     margin: 5% 15%;
-    margin-top: 1%;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: italic;
     font-size: 32px;
-
+    overflow: auto;
+    min-height: 0;
 }
 
 div.quote_content .reference{
