@@ -109,6 +109,32 @@ buttons.forEach(
             }
         )
                 break;
+            case "↑":
+            button.addEventListener(
+                "click", () => {
+                    let quote = document.querySelector("div.quote_content")
+                    let computedStyle = window.getComputedStyle(quote)
+                    let font_size = computedStyle.getPropertyValue('font-size');
+                    let font_integer_value = parseInt(font_size,10)
+                    console.log(font_integer_value)
+                    font_integer_value=font_integer_value+1
+                    quote.style.fontSize = `${font_integer_value}px`;
+                }
+            )
+                break;
+            case "↓":
+            button.addEventListener(
+                "click", () => {
+                    let quote = document.querySelector("div.quote_content")
+                    let computedStyle = window.getComputedStyle(quote)
+                    let font_size = computedStyle.getPropertyValue('font-size');
+                    let font_integer_value = parseInt(font_size,10)
+                    console.log(font_integer_value)
+                    font_integer_value=font_integer_value-1
+                    quote.style.fontSize = `${font_integer_value}px`;
+                }
+            )
+                break;
         }
         
     }
