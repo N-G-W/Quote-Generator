@@ -90,6 +90,8 @@ button.bottom_nav_buttons{
 }
 
 div.quote_content{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     margin: 5% 15%;
     margin-top: 1%;
@@ -99,5 +101,10 @@ div.quote_content{
     font-style: italic;
     font-size: 32px;
 
+}
+
+div.quote_content .reference{
+    flex: 1;
+    align-self: flex-end;
 }
 
