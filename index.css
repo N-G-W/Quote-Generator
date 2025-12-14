@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* love and connection color- palette 
@@ -54,6 +54,7 @@ button.bottom_nav_buttons{
     color: var(--background-color) ;
     background-color: var(--button-background-color);
     border-radius: 49px;
+    border: 0px;
     font-size: 36px;
 }
 
