@@ -1,3 +1,24 @@
+// let love_connection_quotes = {
+//     0: "",
+//     1: "",
+// }
+
+// let 
+function update_content() {
+    console.log("content is being updated")
+}
+
+let buttons = document.querySelectorAll("button")
+
+buttons.forEach(
+    (button) => {
+        button.addEventListener(
+            "click", ()=> {
+                update_content()
+            }
+        )
+    }
+)
 let select_element = document.querySelector("select")
 select_element.addEventListener(
     "change", () => {
