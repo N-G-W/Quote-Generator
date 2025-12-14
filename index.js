@@ -76,6 +76,27 @@ function update_content() {
 
 let buttons = document.querySelectorAll("button")
 
+// .button_container.bottom_nav_buttons#Previous
+
+const mediaQuery = window.matchMedia('(max-width: 750px)');
+
+let previous = document.querySelector(".button_container .bottom_nav_buttons#Previous")
+let random = document.querySelector(".button_container .bottom_nav_buttons#Random")
+let next = document.querySelector(".button_container .bottom_nav_buttons#Next")
+function change_buttons(event) {
+    if (event.matches) {
+        previous.textContent = "<";
+        random.textContent = "?";
+        next.textContent = ">";
+    }
+    else {
+        previous.textContent = "Previous";
+        random.textContent = "Random";
+        next.textContent = "Next";
+    }
+}
+
+mediaQuery.addEventListener("change",change_buttons)
 
 buttons.forEach(
     (button) => {

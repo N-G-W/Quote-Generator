@@ -132,3 +132,92 @@ div.dropdown .font_change{
     border: 0px;
     font-size: 15px;
 }
+
+
+@media (max-width:750px) {
+    header {
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+            padding: 40px;
+            color: var(--header-text);
+            background-color: var(--header-background-color);
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            border-radius: 0px;
+            font-style: italic;
+    }
+
+    div.dropdown {
+        align-self:center;
+        padding-top: 10px;
+        margin-right: 5px;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+        select {
+            padding: 5px 10px;
+            background-color: var(--button-background-color);
+            font-family: "Lato", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 15px;
+            border-radius: 5px;
+            color: var(--background-color);
+            cursor: pointer;
+            border: 0px;
+        }
+
+    #label_category{
+        display: none !important;
+    }
+
+    #label_fontsize{
+        display: none !important;
+    }
+    div.button_container {
+            /* flex: 1; */
+            /* height: 5%; */
+            display: flex;
+            justify-content: space-between;
+            /* gap: 5%; */
+        }
+    button.bottom_nav_buttons {
+            /* flex: 1; */
+            /* padding: 20px 45px; */
+            width: 50px;
+            height: 50px;
+            color: var(--button-text-color);
+            background-color: var(--button-background-color);
+            border-radius: 8px;
+            border: 0px;
+            font-size: 36px;
+        }
+        div.quote_content {
+            display: flex;
+            height: 80%;
+            width: 50%;
+            align-self: center;
+            flex-direction: column;
+            flex: 1;
+            margin: 5% 15%;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 20px;
+            overflow: auto;
+            min-height: 0;
+        }
+
+        div.dropdown .font_change {
+            padding: 5px 15px;
+            color: var(--button-text-color);
+            background-color: var(--button-background-color);
+            border-radius: 50%;
+            border: 0px;
+            font-size: 10px;
+        }
+}
