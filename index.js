@@ -79,7 +79,7 @@ let buttons = document.querySelectorAll("button")
 
 buttons.forEach(
     (button) => {
-        switch (button.textContent) {
+        switch (button.id) {
             case "Previous":
                 button.addEventListener(
                     "click", () => {
