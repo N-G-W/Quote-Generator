@@ -67,18 +67,50 @@ let reflection_truth_quotes = {
 let current_index = 0
 let current_category = love_connection_quotes
 function update_content() {
+    let quote = document.querySelector("div.quote")
+    let reference = document.querySelector("div.reference")
+    quote.textContent = current_category[current_index][0]
+    reference.textContent = current_category[current_index][1]
     console.log("content is being updated")
 }
 
 let buttons = document.querySelectorAll("button")
 
+
 buttons.forEach(
     (button) => {
-        button.addEventListener(
-            "click", ()=> {
+        switch (button.textContent) {
+            case "Previous":
+                button.addEventListener(
+                    "click", () => {
+                        if (current_index != 0) {
+                            current_index = ((current_index-1)%10)
+                        }
+                        else {
+                            current_index = 9
+                        }
                 update_content()
             }
         )
+                break;
+            case "Next":
+                button.addEventListener(
+            "click", () => {
+                current_index = ((current_index+1)%10)
+                update_content()
+            }
+        )
+                break;
+            case "Random":
+                button.addEventListener(
+            "click", () => {
+                current_index = Math.floor(Math.random() * 10);
+                update_content()
+            }
+        )
+                break;
+        }
+        
     }
 )
 let select_element = document.querySelector("select")
@@ -95,21 +127,27 @@ function set_theme() {
     switch (category) {
         case "Love & Connection":
             set_theme_love_connection();
+            current_category = love_connection_quotes;
             break;
         case "Joy & Gratitude":
-            set_theme_joy_gratitude()
+            set_theme_joy_gratitude();
+            current_category = joy_gratitude_quotes;
             break;
         case "Pain & Loss":
             set_theme_pain_loss();
+            current_category = pain_loss_quotes;
             break;
         case "Strength & Growth":
-            set_theme_strength_growth()
+            set_theme_strength_growth();
+            current_category = strength_growth_quotes;
             break;
         case "Reflection & Truth":
-            set_theme_reflection_truth()
+            set_theme_reflection_truth();
+            current_category = reflection_truth_quotes;
             break;
         default:
             set_theme_love_connection();
+            current_category = love_connection_quotes;
 
     }
 }
