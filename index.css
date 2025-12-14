@@ -41,6 +41,34 @@ header{
     border-radius: 20px;
 }
 
+div.dropdown{
+    flex:1;
+    padding-top: 20px;
+    margin-right: 15px;
+    align-self:flex-end;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+select{
+    padding: 5px 10px;
+    background-color: var(--button-background-color);
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+select option:checked{
+    background-color: var(--button-background-color)  ;
+    color: var(--text-color);
+}
+
 div.button_container {
     flex: 1;
     display: flex;
@@ -61,6 +89,7 @@ button.bottom_nav_buttons{
 div.quote_content{
     flex: 1;
     margin: 5% 15%;
+    margin-top: 1%;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 200;
