@@ -80,9 +80,9 @@ let buttons = document.querySelectorAll("button")
 
 const mediaQuery = window.matchMedia('(max-width: 750px)');
 
-let previous = document.querySelector(".button_container .bottom_nav_buttons#Previous")
-let random = document.querySelector(".button_container .bottom_nav_buttons#Random")
-let next = document.querySelector(".button_container .bottom_nav_buttons#Next")
+let previous = document.querySelector(".button_container_container .bottom_nav_buttons#Previous")
+let random = document.querySelector(".button_container_container .bottom_nav_buttons#Random")
+let next = document.querySelector(".button_container_container .bottom_nav_buttons#Next")
 function change_buttons(event) {
     if (event.matches) {
         previous.textContent = "<";

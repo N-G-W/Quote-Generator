@@ -98,7 +98,7 @@ button.bottom_nav_buttons{
     border-radius: 49px;
     border: 0px;
     font-size: 36px;
-    margin: 0px 25px;
+    margin: 10px 25px;
 }
 
 button.bottom_nav_buttons:hover{
@@ -112,7 +112,7 @@ div.quote_content{
     align-self: center;
     flex-direction: column;
     flex: 1;
-    margin: 5% 15%;
+    margin: 1% 15%;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -188,6 +188,7 @@ div.dropdown .font_change{
 
         div.button_container_container {
             height: 100px;
+            width: 100%;
             flex-grow: 0;
             flex-shrink: 1;
             align-self: center;
@@ -196,18 +197,16 @@ div.dropdown .font_change{
             display: flex;
         }
     div.button_container {
-        height: 100px;
+    width: 100%;
             display: flex; 
             flex-shrink: 1;
-            /* flex: 1; */
-            justify-content: space-between;
-            /* width: 400px; */
+            justify-content: space-around;
         }
     button.bottom_nav_buttons {
             flex: 0;
             flex-shrink: 1;
-            padding: 0px 25px;
-            width: 80px;
+            padding: 0px 30px;
+            /* width: auto; */
             margin: 10px 10px;
             color: var(--button-text-color);
             background-color: var(--button-background-color);
