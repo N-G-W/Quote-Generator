@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid red;
+}
+
+/* love and connection color- palette 
+background: #FFF1E6
+header: #F4C2C2
+button-background: #C44569
+text: #6D1E2C
+*/
+
+body{
+    margin: 2%;
+    background-color: #FFF1E6;
+    color:#6D1E2C ;
+}
+
+header{
+    font-size: 64px;
+    text-align: center;
+    padding: 40px;
+    background-color: #F4C2C2;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+button.bottom_nav_buttons{
+    flex: 1;
+    padding: 20px 45px;
+    color: #FFF1E6 ;
+    background-color: #C44569;
+    border-radius: 49px;
+    font-size: 36px;
+}
+
+div.quote_content{
+    margin: 5% 15%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 32px;
+
+}
+
+div.button_container{
+    display: flex;
+    margin: auto;
+    gap: 5%;
+    width: 50%;
+}
