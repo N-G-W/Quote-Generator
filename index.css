@@ -14,6 +14,7 @@ text: #6D1E2C
 :root {
     --background-color: #FFF1E6;
     --header-background-color: #F4C2C2;
+    --header-text: #6D1E2C;
     --button-background-color: #C44569;
     --text-color: #6D1E2C;
 }
@@ -34,6 +35,7 @@ header{
     font-size: 64px;
     text-align: center;
     padding: 40px;
+    color: var(--header-text);
     background-color: var(--header-background-color);
     font-family: "Lato", sans-serif;
     font-weight: 400;
