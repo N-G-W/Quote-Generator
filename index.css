@@ -17,7 +17,13 @@ body{
     color:#6D1E2C ;
 }
 
+div.container{
+    display:flex;
+    flex-direction: column;
+}
+
 header{
+    flex: 1;
     font-size: 64px;
     text-align: center;
     padding: 40px;
@@ -25,8 +31,15 @@ header{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: italic;
+    border-radius: 20px;
 }
 
+div.button_container {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    gap: 5%;
+}
 
 button.bottom_nav_buttons{
     flex: 1;
@@ -38,6 +51,7 @@ button.bottom_nav_buttons{
 }
 
 div.quote_content{
+    flex: 1;
     margin: 5% 15%;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -47,9 +61,3 @@ div.quote_content{
 
 }
 
-div.button_container{
-    display: flex;
-    margin: auto;
-    gap: 5%;
-    width: 50%;
-}
