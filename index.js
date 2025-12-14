@@ -96,11 +96,9 @@ function change_buttons(event) {
     }
 }
 
-mediaQuery.addEventListener("load", change_buttons)
+mediaQuery.addEventListener("change", change_buttons)
 
-document.addEventListener("DOMContentLoaded", () => {
-    change_buttons(mediaQuery)
-})
+change_buttons(mediaQuery)
 
 buttons.forEach(
     (button) => {
