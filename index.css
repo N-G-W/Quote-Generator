@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 /* love and connection color- palette 
@@ -32,7 +32,9 @@ div.container{
     flex-direction: column;
     justify-content: center;
 }
-
+.spacer{
+    flex: auto;
+}
 header{
     margin: 1%;
     /* flex: 1; */
@@ -50,6 +52,7 @@ header{
 div.dropdown{
     /* flex:1; */
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-right: 15px;
     align-self:flex-end;
     font-family: "Lato", sans-serif;
