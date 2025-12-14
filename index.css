@@ -11,10 +11,17 @@ button-background: #C44569
 text: #6D1E2C
 */
 
+:root {
+    --background-color: #FFF1E6;
+    --header-background-color: #F4C2C2;
+    --button-background-color: #C44569;
+    --text-color: #6D1E2C;
+}
+
 body{
     margin: 2%;
-    background-color: #FFF1E6;
-    color:#6D1E2C ;
+    background-color: var(--background-color);
+    color:var(--text-color) ;
 }
 
 div.container{
@@ -27,7 +34,7 @@ header{
     font-size: 64px;
     text-align: center;
     padding: 40px;
-    background-color: #F4C2C2;
+    background-color: var(--header-background-color);
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -44,8 +51,8 @@ div.button_container {
 button.bottom_nav_buttons{
     flex: 1;
     padding: 20px 45px;
-    color: #FFF1E6 ;
-    background-color: #C44569;
+    color: var(--background-color) ;
+    background-color: var(--button-background-color);
     border-radius: 49px;
     font-size: 36px;
 }
